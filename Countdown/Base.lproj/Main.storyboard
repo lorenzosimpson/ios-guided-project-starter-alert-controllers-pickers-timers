@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p62-hI-vQM">
-    <device id="retina6_7" orientation="portrait" appearance="dark"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -17,25 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="EDy-z8-oTb">
-                                <rect key="frame" x="20" y="212.99999999999997" width="388" height="500.33333333333326"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="EDy-z8-oTb">
+                                <rect key="frame" x="54" y="267.66666666666669" width="320" height="391.00000000000006"/>
                                 <subviews>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5OS-pk-HkS">
-                                        <rect key="frame" x="0.0" y="0.0" width="388" height="216"/>
+                                    <pickerView contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="5OS-pk-HkS">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="201"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.25"/>
                                     </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:01:30:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="4S2-aD-c2H">
-                                        <rect key="frame" x="0.0" y="223" width="388" height="143.33333333333337"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:01:30:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S2-aD-c2H">
+                                        <rect key="frame" x="0.0" y="204" width="320" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="51"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeE-3u-1eL">
-                                        <rect key="frame" x="0.0" y="373.33333333333337" width="388" height="60"/>
+                                        <rect key="frame" x="0.0" y="267.99999999999994" width="320" height="60"/>
                                         <color key="backgroundColor" red="0.85024434510000002" green="0.57780816459999995" blue="0.1566657145" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="OOJ-WZ-zVT"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -47,12 +49,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtf-i8-tYk">
-                                        <rect key="frame" x="0.0" y="440.33333333333337" width="388" height="60"/>
+                                        <rect key="frame" x="0.0" y="330.99999999999994" width="320" height="60"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="L7y-b2-fZO"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Reset">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -69,9 +71,8 @@
                         <viewLayoutGuide key="safeArea" id="YBs-xf-xmP"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YBs-xf-xmP" firstAttribute="trailing" secondItem="EDy-z8-oTb" secondAttribute="trailing" constant="20" id="KPA-Db-Ywr"/>
-                            <constraint firstItem="EDy-z8-oTb" firstAttribute="leading" secondItem="YBs-xf-xmP" secondAttribute="leading" constant="20" id="oLh-Db-Lxj"/>
-                            <constraint firstItem="EDy-z8-oTb" firstAttribute="centerY" secondItem="AZH-ge-E9m" secondAttribute="centerY" id="z5d-oP-Iwr"/>
+                            <constraint firstItem="EDy-z8-oTb" firstAttribute="centerX" secondItem="AZH-ge-E9m" secondAttribute="centerX" id="HVw-Al-Ywm"/>
+                            <constraint firstItem="EDy-z8-oTb" firstAttribute="centerY" secondItem="AZH-ge-E9m" secondAttribute="centerY" id="VLM-b2-Brq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -83,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpP-xj-NHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="77" y="131"/>
+            <point key="canvasLocation" x="76.45788336933046" y="130.37383177570092"/>
         </scene>
     </scenes>
     <resources>
